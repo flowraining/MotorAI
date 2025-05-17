@@ -7,8 +7,6 @@ import joblib
 
 new_model = tf.keras.models.load_model('mlp/fault_classfication.h5')
 
-# Check it accuracy, make sure its not lying
-
 df = pd.read_csv("erosion.csv")
 scaler = joblib.load('scaler.pkl')
 
